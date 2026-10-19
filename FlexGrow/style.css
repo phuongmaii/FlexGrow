@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #26352c;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2d6a4f;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #66756b;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    background: white;
+    padding: 22px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #2d6a4f;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 2px dashed #74a88a;
+    border-radius: 8px;
+    background: #f8fbf9;
+}
+
+.item {
+    flex: 0 1 100px;
+    min-width: 0;
+    padding: 20px 8px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #d8f3dc;
+    border: 1px solid #74a88a;
+    border-radius: 6px;
+    color: #214d35;
+}
+
+/* Chỉ Item 2 được phép phát triển */
+.grow-one {
+    flex-grow: 1;
+    background-color: #95d5b2;
+    font-weight: bold;
+}
+
+/* Item 4 phát triển gấp đôi Item 2 */
+.grow-two {
+    flex-grow: 2;
+    background-color: #74c69d;
+    font-weight: bold;
+}
+
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2d6a4f;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    .container {
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .item {
+        padding: 15px 3px;
+        font-size: 12px;
+    }
+}

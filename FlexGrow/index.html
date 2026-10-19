@@ -1,0 +1,62 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Flex-Grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Thực hành CSS Flex-Grow</h1>
+        <p>Quan sát sự thay đổi kích thước của 5 Flex Item</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Flex-grow mặc định</h2>
+            <p>Các Item có kích thước cơ sở bằng nhau và không tăng thêm.</p>
+
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Flex-grow: 1 cho Item 2</h2>
+            <p>Item 2 nhận phần không gian còn trống, các Item khác giữ kích thước cơ sở.</p>
+
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item grow-one">Item 2<br>flex-grow: 1</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. So sánh các giá trị flex-grow</h2>
+            <p>Item 2 có flex-grow: 1, Item 4 có flex-grow: 2.</p>
+
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item grow-one">Item 2<br>grow: 1</div>
+                <div class="item">Item 3</div>
+                <div class="item grow-two">Item 4<br>grow: 2</div>
+                <div class="item">Item 5</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Ghi nhớ: flex-grow càng lớn thì Item nhận phần không gian trống càng nhiều.</p>
+    </footer>
+</body>
+</html>
+```
